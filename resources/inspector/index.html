@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google Chrome Web Inspector</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../../assignments/nice_style/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../assignments/nice_style/style.css" />
+		<link href="../../assignments/nice_style/prettify/prettify.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../assignments/nice_style/prettify/prettify.js"></script>
+	</head>
+	<body onload="prettyPrint()">
+		<div id="content">
+			<article>
+				<h1>Google Chrome Web Inspector</h1>
+				<h2>Working with CSS</h2>
+				<section>
+					<!--
+					Google Chrome Web Inspector & working with CSS
+					===
+					- Open up google chrome.
+					- Right click on your webpage, and specifically on the div or element whose css
+						is misbehaving.
+					- Select `Inspect Element`.
+					- It should pop up a window at the bottom of the browser that looks a bit like
+						this: <132inspectorpanel.png>
+					- You should see that the misbehaving element is highlighted in blue in the left
+						panel. If it is not, mouse over the element again and right click and `Inspect
+						Element` again, it should now be highlighted.
+					- In the right panel you will see a styles accordion, expand it if it is not
+						already.
+					- In the styles accordion you will see which style rules are applied to the
+						element and from which line of css they originate.
+					- To change an existing rule, double-click on that rule.
+					- To add another rule to just that element, click to the right of the closing
+						brace, and start typing:
+							<pre>
+							a {
+									cursor: pointer;
+							} >click right here to add another rule<
+							</pre>
+					- To disable a rule, hover your mouse over it and then uncheck the checkbox on
+						the right of the rule.
+					- To see what an element looks like when `:hover` is active, click the icon on
+						the accordion banner with a mouse over a dotted box:
+						<132hovershow.png>
+					- You can click on the filename:linenumber next to the rule to see the specific
+						text for that rule.
+					- To validate your css, use http://validator.w3.org/#validate_by_input
+
+					Google Chrome Web Inspector: working with the DOM inspector
+					===
+					- Open Chrome to some webpage
+					- Right click on the element which you want to see.
+					- Select "Inspect Element".
+					- You should be looking at the DOM tree! You can:
+							- Edit attributes and contents (right click on the element's entry)
+							- Collapse and expand the node and its parents (this is a much better way to
+								see the source code of a page! [1])
+
+					[1] Note that if you "view source" on a page Chrome will make a new request to
+					that URL and display exactly what the server returns. The Web Inspector shows
+					you what the page is currently, which may be dramatically different because of
+					Javascript!
+
+					Google Chrome Web Inspector: working with Javascript
+					===
+					- Open Chrome to some webpage
+					- Right click anywhere on the page and select "Inspect Element." Alternatively
+						click on the Wrench (right of the URL bar) -> Tools -> Javascript Console
+					- If you're not on the tab labeled "Console" already, switch to it.
+					- You should have a prompt where you can now execute Javascript commands. Try
+						typing 5+5 (followed by enter). The console will display the result of the
+						command evaluated as an expression (for many constructions which aren't valid
+						expressions the console will simply return "undefined").
+
+					Some Brief Notes on the other functions of the Chrome Web Inspector:
+					---
+					- The resources pane provides information about the various resources associated
+						with a page. This is useful if you want to make sure a resource (e.g. an
+						external script or stylesheet) has been loaded or for checking out the
+						cookies.
+					- The network panel will log all network requests that the browser makes and
+						give you all sorts of useful info about them. This is useful for looking at
+						resources, but will also show you any requests made via Javascript.
+					-->
+					<ul>
+					<li>Open up Google Chrome.</li>
+					<li>Right click on your webpage (specifically on the div or element whose css
+					is misbehaving)</li>
+					<li>Select <code>Inspect Element</code>.</li>
+					<li><p>It should pop up a window at the bottom of the browser that looks a bit like
+					this:</p> <img src="132inspectorpanel.png"></li>
+					<li>You should see that the misbehaving element is highlighted in blue in the left
+					panel. If it is not, mouse over the element again and right click and <code>Inspect
+					Element</code> again, it should now be highlighted.</li>
+					<li>In the right panel you will see a styles accordion, expand it if it is not
+					already.</li>
+					<li>In the styles accordion you will see which style rules are applied to the
+					element and from which line of css they originate.</li>
+					<li>To change an existing rule, double-click on that rule.</li>
+					<li>To add another rule to just that element, click to the right of the closing
+					brace, and start typing:</li>
+					</ul>
+					<pre>
+a {
+	cursor: pointer;
+} >click right here to add another rule&lt;
+					</pre>
+					<ul>
+					<li>To disable a rule, hover your mouse over it and then uncheck the checkbox on
+					the right of the rule.</li>
+					<li><p>To see what an element looks like when <code>:hover</code> is active, click the icon on
+					the accordion banner with a mouse over a dotted box:</p>
+					<img src="132hovershow.png"></li>
+					<li>You can click on the filename:linenumber next to the rule to see the specific
+					text for that rule.</li>
+					<li>To validate your css, use <a href="http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input</a></li>
+					</ul>
+
+					<h2>Working With the DOM inspector</h2>
+
+					<ul>
+					<li>Open Chrome to some webpage</li>
+					<li>Right click on the element which you want to see.</li>
+					<li>Select &#8220;Inspect Element&#8221;.</li>
+					<li>You should be looking at the DOM tree! You can:
+					<ul>
+					<li>Edit attributes and contents (right click on the element&#8217;s entry)</li>
+					<li>Collapse and expand the node and its parents (this is a much better way to
+					see the source code of a page! [1])</li>
+					</ul></li>
+					</ul>
+
+					<p>[1] Note that if you &#8220;view source&#8221; on a page Chrome will make a new request to
+					that URL and display exactly what the server returns. The Web Inspector shows
+					you what the page is currently, which may be dramatically different because of
+					Javascript!</p>
+
+					<h2>Working with Javascript</h2>
+
+					<ul>
+					<li>Open Chrome to some webpage</li>
+					<li>Right click anywhere on the page and select &#8220;Inspect Element.&#8221; Alternatively
+					click on the Wrench (right of the URL bar) -> Tools -> Javascript Console</li>
+					<li>If you&#8217;re not on the tab labeled &#8220;Console&#8221; already, switch to it.</li>
+					<li>You should have a prompt where you can now execute Javascript commands. Try
+					typing 5+5 (followed by enter). The console will display the result of the
+					command evaluated as an expression (for many constructions which aren&#8217;t valid
+					expressions the console will simply return &#8220;undefined&#8221;).</li>
+					</ul>
+
+					<h2>Some Brief Notes on the other functions of the Chrome Web Inspector:</h2>
+
+					<ul>
+					<li>The resources pane provides information about the various resources associated
+					with a page. This is useful if you want to make sure a resource (e.g. an
+					external script or stylesheet) has been loaded or for checking out the
+					cookies.</li>
+					<li>The network panel will log all network requests that the browser makes and
+					give you all sorts of useful info about them. This is useful for looking at
+					resources, but will also show you any requests made via Javascript.</li>
+					</ul>
+				</section>
+			</article>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,108 @@
+body {
+  font: lighter 15px/20px HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+min-width: 900px;
+}
+
+a {
+  color: inherit;
+}
+
+p, li {
+  text-align: justify;
+}
+
+b {
+  font: bold 15px/20px HelveticaNeue-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font: bold 45px/150px HelveticaNeue-CondensedBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-stretch: condensed;
+  position: relative;
+  z-index: 100;
+}
+h1 a{
+text-decoration: none;
+}
+h2 {
+  margin: 50px 0 0 0;
+  font: bold 36px/36px HelveticaNeue-CondensedBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-stretch: condensed;
+}
+
+#header, #nav div, #content {
+  padding: 0 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#nav {
+  text-align: center;
+  line-height: 40px;
+  background: black;
+  color: white;
+  height: 40px;
+}
+
+#nav div {
+  position: relative;
+}
+
+#nav canvas {
+  position: absolute;
+  display: block;
+  top: -150px;
+  left: 0;
+}
+
+#nav a {
+  padding: 0 15px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  background: black;
+  position: relative;
+}
+
+#nav a:hover {
+  background: #555;
+}
+
+#nav a#current {
+  position: static;
+  background: white;
+  color: black;
+}
+
+#content {
+  padding-bottom: 100px;
+}
+
+
+
+table.hours {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	font-weight:bold;
+	margin-left: 30px;
+}
+
+table.hours td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	width:63px;
+	height:30px;
+}
+
+td.time{
+	width:55px;
+}

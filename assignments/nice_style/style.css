@@ -1,0 +1,177 @@
+@font-face{
+	font-family: 'Anonymous Pro';
+	src: url('Anonymous Pro.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Calluna';
+	src: url('Calluna-Regular.otf') format('opentype');
+}
+body{
+	background-color: #dbdbdb;
+	padding: 40px 50px 60px 50px;
+	background-image: url('walnut.jpg');
+	text-align: justify;
+	font-size: 18px;
+	line-height: 27px;
+	font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+	color: #000;
+}
+a:link{
+	color: #22e;
+	text-decoration: none;
+}
+a:visited{
+	color: #808;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	color: #a00;
+}
+a:link img{
+	border: 2px solid #22e;
+}
+a:visited img{
+	border: 2px solid #808;
+}
+a:active img{
+	border: 2px solid #fff;
+}
+a:active img{
+	border: 2px solid #a00;
+}
+strong{
+	font-weight: bold;
+	font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+}
+em{
+	font-style: italic;
+	font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Calluna, Garamond, Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	color: #9d9979;
+	text-align: left;
+}
+h1{
+	font-size: 40px;
+	line-height: 60px;
+	margin: 0;
+    
+}
+h1 a:link, h1 a:visited{
+	color: #9d9979;
+}
+h2{
+	font-size: 30px;
+	line-height: 45px;
+	margin: 0 0 5px 0;
+}
+h3, h4, h5, h6{
+	font-size: 20px;
+	line-height: 30px;
+}
+div#content{
+	display: block;
+	background-color: #fefefe;
+	padding: 40px 40px 20px 40px;
+	border: 1px solid #bbb;
+	box-shadow: 1px 3px 5px #888;
+	min-width: 700px;
+	max-width: 900px;
+	margin: 0 auto ;
+}
+div#due_date h3,h1{
+    display:block;
+    width:100%;
+    text-align:center;
+}
+
+content:before{
+	content: "If you're a student: please email cs132headtas@cs.brown.edu asap to tell us this is broken! If you're a TA: you are using the old version of the template. Get the new one from stencil.htm";
+}
+content article{
+	display: none;
+}
+article{
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-image: url('wood_circle.png');
+	background-size: 75px;
+	padding: 0 0 60px 0;
+}
+section{
+	margin: 0 0 15px 0;
+}
+div#summary{
+	margin: 0 0 30px 0;
+}
+p{
+	margin: 0 0 10px 0;
+}
+ul, ol{
+	margin: 0 15px 15px 25px;
+}
+
+li ul, li ol{
+	margin: 0 0 0 30px
+}
+ul > li{
+	display: list-item;
+	list-style: disc;
+}
+ul ul > li{
+	list-style: circle;
+}
+ol > li{
+	display: list-item;
+	list-style:decimal;
+}
+ol ol > li{
+	list-style: lower-alpha;
+}
+li{
+	margin: 0 0 5px 0;
+}
+pre{
+	margin: 20px 25px 25px 40px;
+	font-family: 'Anonymous Pro', 'Courier New', Courier, Monaco, monospace;
+	line-height: 16px;
+	word-wrap: break-word;
+}
+code{
+	font-family: 'Anonymous Pro', 'Courier New', Courier, Monaco, monospace;
+	font-size: 15px;
+	line-height: 16px;
+}
+blockquote{
+	margin: 20px 25px 25px 30px;
+	font-size: 16px;
+	line-height: 24px;
+	border-left: 3px solid #9d9979;
+	padding: 0 0 0 10px;
+}
+hr{
+	display: block;
+	height: 40px;
+	margin: 30px 0 30px 0;
+	border: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('fat_slat.png');
+}
+img{
+	margin: 10px 0 5px 0;
+	max-width: 100%;
+}
+.float_l{
+	float:left;
+}
+.float_r{
+	float:right;
+}
+.clear{
+	clear: both;
+}
