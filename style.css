@@ -65,6 +65,7 @@ h2 {
   text-decoration: none;
   background: black;
   position: relative;
+  color: white;
 }
 
 #nav a:hover {
@@ -105,4 +106,8 @@ table.hours td {
 
 td.time{
 	width:55px;
+}
+
+.staff-photo{
+  width: 250px;
 }
